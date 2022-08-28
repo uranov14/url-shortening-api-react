@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --cyan: hsl(180, 66%, 49%);
@@ -10,6 +13,18 @@
   --veryDarkViolet: hsl(260, 8%, 14%);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ui, li {
+  list-style-type: none;
 }
 
 .btn {
@@ -29,6 +44,7 @@ li {
 
 p {
   color: var(--grayishViolet);
+  line-height: 1.6;
 }
 
 .illustration {
@@ -42,6 +58,14 @@ p {
   overflow: hidden;
 }
 
+.advanced {
+  background-color: var(--gray);
+}
+
+.short-link {
+  background: var(--darkViolet) url(./images/bg-boost-mobile.svg);
+}
+
 @media(min-width: 750px) {
   li {
     color: var(--grayishViolet);
@@ -51,5 +75,13 @@ p {
     transform: scale(1);
     padding-left: 7vw;
     padding-top: 7vh;
+  }
+
+  .short-link {
+    background: var(--darkViolet) url(./images/bg-boost-desktop.svg);
+  }
+
+  .advanced p {
+    width: 47vw;
   }
 }
