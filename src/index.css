@@ -19,6 +19,10 @@ body {
   margin: 0;
 }
 
+.max-width {
+  @apply px-5 lg:max-w-5xl xl:max-w-6xl 2xl:px-0;
+}
+
 img {
   max-width: 100%;
 }
@@ -29,6 +33,7 @@ ui, li {
 
 .btn {
   background-color: var(--cyan);
+  @apply hover:opacity-75 transition-all duration-150
 }
 
 nav {
@@ -44,7 +49,24 @@ li {
 
 p {
   color: var(--grayishViolet);
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+.boost {
+  background-color: var(--darkViolet);
+  height: 17.188rem;
+}
+
+.boost img {
+  height: 17.188rem;
+  @apply w-full;
+}
+
+.boost-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .illustration {
@@ -52,6 +74,10 @@ p {
   padding-left: 22vw;
   padding-top: 12vh;
   padding-bottom: 12vh;
+}
+
+article {
+  
 }
 
 .article-illustration {

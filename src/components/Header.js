@@ -33,17 +33,14 @@ const Header = () => {
             {isOpen && (
                 <nav className='absolute top-20 md:top-0 md:relative md:flex justify-between rounded-lg shadow-2xl md:shadow-none md:bg-transparent px-5 py-5 md:py-0 md:pl-0 md:pr-12 md:mr-12 md:w-9/12'>
                     <ul className='pb-5 md:py-2 md:flex'>
-                        <li className='py-3 px-5 cursor-pointer 
-                        md:px-0 md:py-0 text-center md:mx-3'>
-                            Features
+                        <li className='py-3 px-5 md:px-0 md:py-0 text-center md:mx-3'>
+                           <button>Features</button>
                         </li>
-                        <li className='py-3 px-5 cursor-pointer 
-                        md:px-0 md:py-0 text-center md:mx-3'>
-                            Pricing
+                        <li className='py-3 px-5 md:px-0 md:py-0 text-center md:mx-3'>
+                          <button>Pricing</button>
                         </li>
-                        <li className='py-3 px-5 cursor-pointer 
-                        md:px-0 md:py-0 text-center md:mx-3'>
-                            Resources
+                        <li className='py-3 px-5 md:px-0 md:py-0 text-center md:mx-3'>
+                            <button>Resources</button>
                         </li>
                     </ul>
                     <hr className='md:hidden'/>
