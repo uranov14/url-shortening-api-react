@@ -15,14 +15,12 @@ Users should be able to:
 
 ### Screenshot
 
-![src/images/screenshot.png](./src/images/screenshot.png)
+![./src/images/screenshot.png](./src/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [Solution URL here](https://github.com/uranov14/url-shortening-api-react.git)
+- Live Site URL: [Live site URL here](https://url-shortening-api-react-netlify.netlify.app/)
 
 ### Built with
 
@@ -34,5 +32,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [uranov](https://www.frontendmentor.io/profile/uranov14)
