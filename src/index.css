@@ -32,7 +32,7 @@ li {
 }
 
 li button {
-  color: var(--grayishViolet);
+  color: white;
 }
 
 .btn {
@@ -87,13 +87,8 @@ article {
   overflow: hidden;
 }
 
-.shortener {
-  transform: translateY(42vh);
-}
-
-
 .advanced {
-  background-color: var(--gray);
+  background-color: hsl(0, 0%, 95%);
 }
 
 .line {
@@ -101,6 +96,9 @@ article {
   left: 160px;
 }
 
+.shortener {
+  transform: translateY(-25vh);
+}
 
 .short-link {
   background: var(--darkViolet) url(./images/bg-boost-mobile.svg);
@@ -111,7 +109,7 @@ footer {
 }
 
 @media(min-width: 768px) {
-  li {
+  li button {
     color: var(--grayishViolet);
   }
 
@@ -126,7 +124,7 @@ footer {
   }
 
   .shortener {
-    transform: translateY(27vh);
+    transform: translateY(15vh);
   }
 
   article {

@@ -54,7 +54,7 @@ const Footer = () => {
                 </article>
 
                 <article>
-                    <ul className='flex items-center justify-between'>
+                    <ul className='flex items-center justify-between mx-auto w-1/2 md:w-full'>
                         <li><img src={facebook} alt='' /></li>
                         <li><img src={twitter} alt='' /></li>
                         <li><img src={pinterest} alt='' /></li>

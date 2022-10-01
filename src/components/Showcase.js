@@ -5,8 +5,8 @@ const Showcase = () => {
 
   return (
     <>
-        <section className='flex flex-col-reverse md:flex-row pl-5 -mb-48 md:-mb-36'>
-            <article className='md:pl-24 md:ml-7 md:mt-12'>
+        <section className='flex flex-col-reverse md:flex-row pl-5 -mb-5 md:-mb-36'>
+            <article className='md:pl-24 md:ml-7 md:mt-12 mb-24 md:mb-0'>
                 <h1 
                 className='text-4xl md:text-5xl font-bold text-center md:text-left pt-2 my-3 md:mt-12 md:mb-1 -ml-5 md:ml-0'>
                     More than just shorter links
@@ -15,7 +15,7 @@ const Showcase = () => {
                     Build your brand's recognition and get detailed insights on how your links are performing.
                 </p>
                 <div className='flex justify-center md:justify-start'>
-                    <button className='btn px-12 md:px-6 py-3 lg:py-2 my-7 -ml-4 md:ml-0 md:my-0 text-white rounded-full'>
+                    <button className='btn px-12 md:px-6 py-3 lg:py-2 mt-5 mb-36 md:my-0 -ml-4 md:ml-0 text-white rounded-full'>
                         Get Started
                     </button>
                 </div>

@@ -34,18 +34,18 @@ const Header = () => {
                 <nav className='absolute top-20 md:top-0 md:relative md:flex justify-between rounded-lg shadow-2xl md:shadow-none md:bg-transparent px-5 py-5 md:py-0 md:pl-0 md:pr-12 md:mr-12 md:w-9/12'>
                     <ul className='pb-5 md:py-2 md:flex'>
                         <li className='py-3 px-5 md:px-0 md:py-0 text-center md:mx-3'>
-                           <button>Features</button>
+                            <button className='hover:text-orange-300 md:hover:text-slate-800'>Features</button>
                         </li>
                         <li className='py-3 px-5 md:px-0 md:py-0 text-center md:mx-3'>
-                          <button>Pricing</button>
+                            <button className='hover:text-orange-300 md:hover:text-slate-800'>Pricing</button>
                         </li>
                         <li className='py-3 px-5 md:px-0 md:py-0 text-center md:mx-3'>
-                            <button>Resources</button>
+                            <button className='hover:text-orange-300 md:hover:text-slate-800'>Resources</button>
                         </li>
                     </ul>
                     <hr className='md:hidden'/>
                     <div className='flex flex-col md:flex-row justify-center my-3 md:my-0'>
-                        <button className='md:px-5 py-2 my-2 md:my-0 block md:inline text-white md:text-gray-400'>Login</button>
+                        <button className='md:px-5 py-2 my-2 md:my-0 block md:inline text-white md:text-gray-400 hover:text-orange-300 md:hover:text-slate-800'>Login</button>
                         <button className='btn md:px-5 py-2 my-2 md:my-0 text-white rounded-full'>Sign Up</button>
                     </div>      
                 </nav>

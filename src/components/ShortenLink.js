@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from './Link'
 
 const getLocalStorage = () => {
   let links = localStorage.getItem('links')
@@ -14,7 +15,6 @@ const getLocalStorage = () => {
 const ShortenLink = () => {
   const [text, setText] = useState("")
   const [links, setLinks] = useState(getLocalStorage())
-  const [buttonCopy, setButtonCopy] = useState("Copy")
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -33,18 +33,13 @@ const ShortenLink = () => {
     }
   }
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(links.full_short_link)
-    setButtonCopy('Copied!')
-  }
-
   useEffect(() => {
     localStorage.setItem('links', JSON.stringify(links))
   })
 
   return (
     <>
-      <section className='shortener flex justify-center flex-col mb-10 mx-auto w-10/12 md:w-full'>
+      <section className='shortener flex justify-center flex-col -mb-56 md:mb-10 mx-auto w-10/12 md:w-full'>
         <form className='md:w-full' onSubmit={handleSubmit}>
           <div className='short-link flex flex-col md:flex-row justify-center p-5 rounded-lg w-full md:w-9/12 mx-auto'>
             <input
@@ -67,30 +62,7 @@ const ShortenLink = () => {
         </form>
 
         {links.map(link => 
-          <div 
-            key={link.code}
-            className='flex flex-col md:flex-row justify-center md:justify-between items-center text-center bg-white md:px-3 mx-auto mt-5 md:w-9/12 rounded-lg shadow-lg'
-          >
-            <article>
-              <h6 className='mb-3 md:mb-0'>Полная короткая ссылка: {link.original_link}</h6>
-              <hr className='md:hidden w-full'/>
-            </article>
-            
-            <article>
-              <ul className='md:flex md:items-center py-2'>
-                <li className='md:mr-5 pb-2 md:pb-0'>
-                  <button className='text-cyan-500'>{link.full_short_link}</button>
-                </li>
-                <li>
-                  <button 
-                    className='btn py-1 px-5 rounded-sm text-sm text-white w-full focus:bg-slate-800' 
-                    onClick={handleCopy}>
-                    {buttonCopy}
-                  </button>
-                </li>
-              </ul>
-            </article>
-          </div>
+          <Link key={link.code} originLink={link.original_link} shortLink={link.full_short_link}/>
         )}
   
       </section>
