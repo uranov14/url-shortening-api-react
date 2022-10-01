@@ -5,7 +5,7 @@ const Showcase = () => {
 
   return (
     <>
-        <section className='flex flex-col-reverse md:flex-row pl-5'>
+        <section className='flex flex-col-reverse md:flex-row pl-5 -mb-48 md:-mb-36'>
             <article className='md:pl-24 md:ml-7 md:mt-12'>
                 <h1 
                 className='text-4xl md:text-5xl font-bold text-center md:text-left pt-2 my-3 md:mt-12 md:mb-1 -ml-5 md:ml-0'>
