@@ -120,9 +120,9 @@ footer {
   }
 
   .illustration {
-    transform: scale(1);
     padding-left: 7vw;
     padding-top: 7vh;
+    transform: translateX(5vw) scale(1.2);
   }
 
   .short-link {

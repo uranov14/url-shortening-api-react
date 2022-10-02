@@ -20,7 +20,7 @@ const Showcase = () => {
                 </button>
             </div>
         </article>
-        <article className='article-illustration pb-7 md:mt-5 md:-mr-20 w-full'>
+        <article className='article-illustration pb-7 md:my-10 w-full'>
             <img src={illustrationWorking} alt='' className='illustration'/>
         </article>
     </section>
