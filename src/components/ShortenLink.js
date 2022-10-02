@@ -38,35 +38,33 @@ const ShortenLink = () => {
   })
 
   return (
-    <>
-      <section className='shortener flex justify-center flex-col -mb-56 md:mb-10 mx-auto w-10/12 md:w-full'>
-        <form className='md:w-full' onSubmit={handleSubmit}>
-          <div className='short-link flex flex-col md:flex-row justify-center p-5 rounded-lg w-full md:w-9/12 mx-auto'>
-            <input
-              id='shorten-link' 
-              type='url' 
-              name="textInput"
-              placeholder='Shorten a link here...'
-              value={text}
-              className='py-3 pl-3 mb-2 md:mb-0 rounded-lg w-full md:w-10/12 md:mr-3'
-              onChange={(e) => setText(e.target.value)}
-            />
-            <button 
-              type='submit'
-              className='btn px-5 py-3 mt-3 md:mt-0 rounded-lg text-white'
-              onClick={handleSubmit}
-            >
-              Shorten It!
-            </button>
-          </div>
-        </form>
+    <section className='shortener -mb-56 md:mb-10 mx-auto w-10/12 md:w-full'>
+      <form className='md:w-full' onSubmit={handleSubmit}>
+        <div className='short-link flex flex-col md:flex-row justify-center p-5 md:p-9 rounded-lg w-full md:w-9/12 mx-auto'>
+          <input
+            id='shorten-link' 
+            type='url' 
+            name="textInput"
+            placeholder='Shorten a link here...'
+            value={text}
+            className='py-3 pl-3 mb-2 md:mb-0 rounded-lg w-full md:w-9/12 md:mr-3'
+            onChange={(e) => setText(e.target.value)}
+          />
+          <button 
+            type='submit'
+            className='btn p-3 mt-3 md:mt-0 rounded-lg text-white md:w-3/12'
+            onClick={handleSubmit}
+          >
+            Shorten It!
+          </button>
+        </div>
+      </form>
 
-        {links.map(link => 
-          <Link key={link.code} originLink={link.original_link} shortLink={link.full_short_link}/>
-        )}
-  
-      </section>
-    </> 
+      {links.map(link => 
+        <Link key={link.code} originLink={link.original_link} shortLink={link.full_short_link}/>
+      )}
+
+    </section>
   )
 }
 

@@ -10,9 +10,9 @@ const Link = (props) => {
     
   return (
     <div 
-      className='flex flex-col md:flex-row justify-center md:justify-between items-center text-center bg-white md:px-3 mx-auto mt-5 md:w-9/12 rounded-lg shadow-lg'
+      className='md:flex md:justify-between items-center bg-white md:px-3 md:mx-auto mt-5 md:w-9/12 rounded-lg shadow-lg'
     >
-      <article>
+      <article className='text-left pl-5 md:pl-0'>
         <h6 className='mb-3 md:mb-0'>Оригинальная ссылка: {props.originLink}</h6>
         <hr className='md:hidden w-full'/>
       </article>
@@ -20,11 +20,11 @@ const Link = (props) => {
       <article>
         <ul className='md:flex md:items-center py-2'>
           <li className='md:mr-5 pb-2 md:pb-0'>
-          <button className='text-cyan-500'>Полная короткая ссылка: {props.shortLink}</button>
+          <button className='text-left pl-5 text-cyan-500'>Полная короткая ссылка: {props.shortLink}</button>
           </li>
           <li>
           <button 
-              className='btn py-1 px-5 rounded-sm text-sm text-white w-full focus:bg-slate-800' 
+              className='btn py-1 px-5 rounded-sm text-sm text-white w-10/12 md:w-full focus:bg-slate-800' 
               onClick={handleCopy}>
               {buttonCopy}
           </button>

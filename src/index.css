@@ -20,7 +20,8 @@ body {
 }
 
 .max-width {
-  @apply px-5 md:px-24 lg:max-w-5xl xl:max-w-6xl 2xl:px-0;
+  @apply px-5 md:px-32 lg:max-w-5xl xl:max-w-6xl 2xl:px-0;
+  transform: translateX(2vw);
 }
 
 img {
@@ -37,7 +38,7 @@ li button {
 
 .btn {
   background-color: var(--cyan);
-  @apply hover:opacity-75 transition-all duration-150
+  @apply hover:opacity-75 transition-all duration-150 font-bold
 }
 
 nav {
@@ -87,17 +88,17 @@ article {
   overflow: hidden;
 }
 
+.shortener {
+  transform: translateY(-24vh);
+}
+
 .advanced {
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 90%);
 }
 
 .line {
   @apply absolute bg-cyan-500 h-5/6 w-2;
   left: 160px;
-}
-
-.shortener {
-  transform: translateY(-25vh);
 }
 
 .short-link {
@@ -113,6 +114,11 @@ footer {
     color: var(--grayishViolet);
   }
 
+  .desc {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+  }
+
   .illustration {
     transform: scale(1);
     padding-left: 7vw;
@@ -124,7 +130,7 @@ footer {
   }
 
   .shortener {
-    transform: translateY(15vh);
+    transform: translateY(-26vh);
   }
 
   article {
@@ -140,7 +146,7 @@ footer {
   }
 
   .line {
-    @apply absolute bg-cyan-500 h-2 top-28 w-full;
+    @apply absolute bg-cyan-500 h-2 top-28 w-10/12;
     transform: translateX(-15%);
   }
 
